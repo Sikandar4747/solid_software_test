@@ -1,5 +1,4 @@
 import 'dart:math' as math;
-
 import 'package:flutter/material.dart';
 
 ///Root of application
@@ -7,7 +6,6 @@ class RootView extends StatelessWidget {
   ///constructor for MaterialApp
   const RootView({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -31,9 +29,8 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   Color color = Colors.white;
-  double opacity = 1.0;
+  final double opacity = 1.0;
   final random = math.Random();
-  int baseOption = 0xFFFFFF;
 
   ///function to update color to a random color
   void _randomColor() {
